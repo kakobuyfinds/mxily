@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>CSSBuy spreadsheet – storlekar, QC och stilval | Fyndjournalen</title>
+<meta name="description" content="En svensk guide till CSSBuy spreadsheet: hitta rätt kategori, jämför mått, förstå QC-bilder och planera frakten. Utforska skor, kläder och accessoarer via Cafans.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#702c42">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CSSBuy spreadsheet – en svensk fyndjournal">
+<meta property="og:description" content="Från skoval till storlekskontroll: praktiska råd för att jämföra produktlänkar och förbereda ett genomtänkt köp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+<meta property="og:image:alt" content="Röd Nike-sneaker mot röd bakgrund.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://images.unsplash.com">
+<style>
+:root{color-scheme:light;--paper:#f6f2e9;--ink:#252620;--wine:#702c42;--line:#d8d2c6;--lime:#e1edac;--muted:#5d6055}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-underline-offset:4px}
+a:hover{color:var(--wine)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--wine);outline-offset:5px}
+img{display:block;width:100%;height:auto}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{line-height:1.12;letter-spacing:-.035em}
+h1{font-size:clamp(2.6rem,6vw,5.6rem);font-weight:750;margin-bottom:24px;overflow-wrap:anywhere}
+h2{font-size:clamp(1.9rem,3.7vw,3rem);margin-bottom:24px}
+h3{font-size:1.35rem;line-height:1.25}
+p{margin-bottom:18px}
+.wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+.masthead{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;border-bottom:1px solid var(--ink)}
+.brand{font-size:1.1rem;font-weight:800;text-decoration:none;letter-spacing:.07em}
+.brand span{display:block;font-size:.67rem;font-weight:500;letter-spacing:.12em;color:var(--muted)}
+.toplink{font-size:.86rem;font-weight:650}
+.label{text-transform:uppercase;letter-spacing:.15em;font-size:.72rem;font-weight:750;color:var(--wine);margin-bottom:14px}
+.categories{padding:26px 0 30px}
+.category-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:14px}
+.category-head h2{font-size:1rem;letter-spacing:0;margin:0}
+.category-head p{font-size:.78rem;margin:0;color:var(--muted)}
+.category-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.category-grid a{min-height:76px;padding:12px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none;font-size:.9rem;font-weight:700;transition:background .15s}
+.category-grid a:hover{background:var(--lime)}
+.category-grid small{display:block;font-size:.68rem;font-weight:500;color:var(--muted);letter-spacing:.06em}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.hero-copy{padding:42px 40px 42px 0}
+.intro{font-size:1.12rem;max-width:54ch}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;background:var(--wine);color:white;text-decoration:none;font-weight:700;font-size:.9rem}
+.button:hover{background:#542034;color:white}
+.hero figure{margin:0;background:#e62d35;position:relative;min-width:0;display:flex;flex-direction:column}
+.hero img{aspect-ratio:1/1;object-fit:cover;flex:1;min-height:0}
+.hero figcaption{padding:14px 18px;font-size:.73rem;background:var(--lime)}
+.note{font-size:.78rem;color:var(--muted);margin:18px 0 0;max-width:58ch}
+.answer{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:32px 0;border-bottom:1px solid var(--line)}
+.answer h2{font-size:1rem;letter-spacing:0;margin:0}
+.answer p{margin:0;max-width:80ch}
+.section{padding:58px 0;border-bottom:1px solid var(--line)}
+.section-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:28px}
+.section-top h2{margin:0;max-width:650px}
+.section-top p{font-size:.88rem;color:var(--muted);max-width:32ch;margin:0}
+.topics{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.topic{border-top:3px solid var(--wine);padding-top:18px}
+.topic h3{font-size:1.1rem}
+.topic p{font-size:.9rem;margin:0;color:var(--muted)}
+.editorial{display:grid;grid-template-columns:1fr 1fr;gap:38px}
+.editorial figure{margin:0}
+.editorial img{aspect-ratio:4/3;object-fit:cover;background:#e9e3d7}
+.editorial figcaption{font-size:.75rem;color:var(--muted);margin-top:10px}
+.editorial h3{margin-top:24px}
+.editorial p{max-width:60ch}
+.journal{display:grid;grid-template-columns:210px 1fr;gap:36px}
+.journal aside p{font-size:.85rem;color:var(--muted)}
+.article{padding:0 0 30px;margin-bottom:30px;border-bottom:1px solid var(--line)}
+.article:last-child{margin:0;padding:0;border:0}
+.article h3{font-size:1.65rem}
+.article ul{padding-left:20px}
+.article li{margin:9px 0}
+.number{display:block;font-size:.74rem;color:var(--wine);font-weight:750;letter-spacing:.12em;margin-bottom:12px}
+.table-scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.88rem;margin:20px 0}
+caption{text-align:left;font-weight:700;margin-bottom:10px}
+th,td{text-align:left;vertical-align:top;padding:13px 14px;border:1px solid var(--line)}
+th{background:#ece7dc}
+td:first-child{font-weight:650}
+.budget{background:var(--lime);padding:20px;font-size:.94rem}
+.faq{display:grid;grid-template-columns:1fr 1.45fr;gap:50px}
+.faq-intro p{max-width:34ch;color:var(--muted)}
+details{border-top:1px solid var(--line);padding:18px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{font-weight:700;cursor:pointer;line-height:1.5}
+details p{font-size:.94rem;margin:14px 0 0}
+.closing{padding:36px 0;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.closing h2{font-size:1.8rem;margin-bottom:8px}
+.closing p{margin:0;color:var(--muted)}
+footer{border-top:1px solid var(--ink);padding:26px 0 36px;font-size:.77rem;color:var(--muted)}
+footer p{max-width:100ch;margin-bottom:12px}
+@media(min-width:900px){
+.hero img{height:100%;max-height:650px}
+}
+@media(max-width:800px){
+.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.hero{grid-template-columns:1fr 1fr}
+.hero-copy{padding:30px 24px 30px 0}
+h1{font-size:2.8rem}
+.topics{grid-template-columns:repeat(2,1fr)}
+.journal{grid-template-columns:1fr}
+.journal aside p{max-width:65ch}
+.faq{grid-template-columns:1fr;gap:20px}
+.section-top{display:block}
+.section-top p{max-width:65ch;margin-top:16px}
+}
+@media(max-width:560px){
+.wrap{width:calc(100% - 32px)}
+.masthead{padding:18px 0}
+.brand{font-size:.9rem}
+.toplink{font-size:.75rem}
+.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.category-head{display:block}
+.category-head p{margin-top:5px}
+.category-grid a{min-height:70px}
+.hero{grid-template-columns:1fr}
+.hero-copy{padding:30px 0}
+.hero img{aspect-ratio:4/3}
+.answer{grid-template-columns:1fr;gap:10px}
+.section{padding:38px 0}
+.editorial{grid-template-columns:1fr;gap:32px}
+.topics{gap:22px 18px}
+.topic h3{font-size:1rem}
+.closing{align-items:flex-start;flex-direction:column}
+th,td{padding:10px}
+.intro{font-size:1rem}
+}
+@media(prefers-reduced-motion:reduce){
+*{transition:none!important}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "name":"CSSBuy spreadsheet – en svensk fyndjournal",
+      "inLanguage":"sv",
+      "description":"En oberoende svensk guide till produktlänkar, storlekskontroll, QC-bilder och fraktplanering.",
+      "about":{
+        "@type":"Thing",
+        "name":"CSSBuy spreadsheet"
+      }
+    },
+    {
+      "@type":"Article",
+      "headline":"Storlek först: jämför plagget du redan gillar",
+      "inLanguage":"sv",
+      "author":{
+        "@type":"Organization",
+        "name":"Fyndjournalen"
+      },
+      "description":"Jämför plaggmått i centimeter, kontrollera mätmetoden och läs storlekstabellen för den valda varianten."
+    },
+    {
+      "@type":"Article",
+      "headline":"Läs QC som en kontrollista",
+      "inLanguage":"sv",
+      "author":{
+        "@type":"Organization",
+        "name":"Fyndjournalen"
+      },
+      "description":"Kontrollera modell, färg, storleksmärkning och synliga skador. QC-bilder bevisar inte äkthet eller långsiktig hållbarhet."
+    },
+    {
+      "@type":"Article",
+      "headline":"Planera paketet innan du väljer frakt",
+      "inLanguage":"sv",
+      "author":{
+        "@type":"Organization",
+        "name":"Fyndjournalen"
+      },
+      "description":"Skilj produktkostnad från frakt och jämför paketets vikt, yttermått, transportvillkor och aktuella avgifter."
+    },
+    {
+      "@type":"FAQPage",
+      "inLanguage":"sv",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"Vad är en CSSBuy spreadsheet?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Det är en sammanställning av produktlänkar som används för att hitta och jämföra varor inför ett köp via CSSBuy. En länklista är inte ett intyg om kvalitet, lagerstatus eller äkthet."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Är den här sidan officiellt kopplad till CSSBuy?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Nej. Fyndjournalen är en oberoende guide. Kategorilänkarna öppnar Cafans och övriga länkar går till Cafans startsida. Här hanteras inga konton, betalningar eller beställningar."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Hur väljer jag storlek på skor och hoodies?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Utgå från den aktuella produktens storlekstabell och mätmetod. Jämför fotlängd eller angivet skomått för skor och bröstvidd, längd och ärm för hoodies. Fotlängd och innersulelängd är olika mått."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Bevisar QC-bilder att en vara är äkta?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Nej. QC-bilder hjälper dig att bedöma synliga detaljer och om rätt variant har kommit fram. De bevisar inte äkthet, materialinnehåll eller hur länge varan håller."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Ingår frakten i priset från en produktlista?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Räkna inte med det. Kontrollera vad produktpriset omfattar och vilka frakt-, betalnings- och serviceavgifter som tillkommer. Slutkostnaden behöver bedömas utifrån det aktuella köpet och paketet."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Visar inspirationsbilderna produkter som finns i lager?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Nej. Bilderna är stilillustrationer och är inte lagerbesked, produktannonser eller QC-underlag. Kontrollera produktens egna bilder, variant och tillgänglighet efter att du öppnat katalogen."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!--
+index.html
+Sökunderlag: tio relevanta webbsidor granskades för ämnen och sökintention.
+Ingen verifierad Google-placering påstås.
+
+cssbuywithqc.com: kategorier, produktlänkar, QC.
+grails.fit/cssbuy-spreadsheet: sökbara fynd, storlek, färg.
+grails.fit/cssbuy-spreadsheet-shoes: skor, produktfoton.
+cssbuyhome.com: köpguide, mått, paketkostnad.
+css-buy.com: oberoende guide, material, vikt.
+cssbuyfind.com/guide/how-to-choose: storlekstabeller, centimeter.
+kakobuysneakers.net/cssbuy-spreadsheet: skokontroll, fraktsteg.
+cssbuyer.click/blog/cssbuy-shoes-guide: skodetaljer, QC-vinklar.
+cssbuy.tips/cssbuy-spreadsheet: variantkontroll, paketmått.
+cssbuyspreadsheet.guide/cssbuy-spreadsheet-sneakers/: skokategorier, passform.
+
+Texten nedan är självständigt formulerad.
+Inga priser, erbjudanden, betyg eller servicevillkor har kopierats.
+-->
+<link rel="canonical" href="https://kakobuyfinds.github.io/mxily/">
+</head>
+<body>
+<header class="wrap masthead">
+  <a class="brand" href="https://www.cafans.com">
+    FYNDJOURNALEN
+    <span>STIL · MÅTT · GENOMTÄNKTA VAL</span>
+  </a>
+  <a class="toplink" href="https://www.cafans.com">Öppna Cafans ↗</a>
+</header>
+
+<main class="wrap">
+  <nav class="categories" aria-label="Produktkategorier på Cafans">
+    <div class="category-head">
+      <h2>Börja med din kategori</h2>
+      <p>Kategorierna öppnas på Cafans</p>
+    </div>
+    <div class="category-grid">
+      <a href="https://cafans.com/category-911-Shoes.html">
+        <small>01 / SHOES</small>Skor ↗
+      </a>
+      <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">
+        <small>02 / HOODIES &amp; SWEATERS</small>Huvtröjor &amp; stickat ↗
+      </a>
+      <a href="https://cafans.com/category-913-T-Shirts.html">
+        <small>03 / T-SHIRTS</small>T-tröjor ↗
+      </a>
+      <a href="https://cafans.com/category-914-Jackets.html">
+        <small>04 / JACKETS</small>Jackor ↗
+      </a>
+      <a href="https://cafans.com/category-915-Pants%2FShorts.html">
+        <small>05 / PANTS &amp; SHORTS</small>Byxor &amp; shorts ↗
+      </a>
+      <a href="https://cafans.com/category-916-Headwear.html">
+        <small>06 / HEADWEAR</small>Kepsar &amp; mössor ↗
+      </a>
+      <a href="https://cafans.com/category-917-Sets.html">
+        <small>07 / SETS</small>Matchande set ↗
+      </a>
+      <a href="https://cafans.com/category-918-underwear%2Funderpants.html">
+        <small>08 / UNDERWEAR</small>Underkläder ↗
+      </a>
+      <a href="https://cafans.com/category-919-Jersey.html">
+        <small>09 / JERSEY</small>Matchtröjor ↗
+      </a>
+      <a href="https://cafans.com/category-920-Accessories.html">
+        <small>10 / ACCESSORIES</small>Accessoarer ↗
+      </a>
+    </div>
+  </nav>
+
+  <section class="hero" aria-labelledby="page-title">
+    <div class="hero-copy">
+      <p class="label">Den svenska fyndjournalen / Skor &amp; vardagsstil</p>
+      <h1 id="page-title">CSSBuy spreadsheet.<br>Se stilen.<br>Kolla detaljerna.</h1>
+      <p class="intro">En bra produktlänk är början på ett val. Här får du hjälp att jämföra passform, läsa bilder och tänka igenom paketet innan du beställer.</p>
+      <a class="button" href="https://www.cafans.com">Utforska katalogen på Cafans ↗</a>
+      <p class="note">Oberoende redaktionell guide. Länkarna leder till Cafans. Varumärkesbilderna ger stilinspiration och visar inte verifierade katalogvaror.</p>
+    </div>
+    <figure>
+      <img
+        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+        alt="Röd Nike-sneaker med ljus swoosh och sula mot en röd bakgrund."
+        width="900"
+        height="900"
+        fetchpriority="high"
+        decoding="async">
+      <figcaption>STILNOTERING 01 — En tydlig färgaccent. Inspirationsfoto, inte produkt- eller QC-bild.</figcaption>
+    </figure>
+  </section>
+
+  <section class="answer" aria-labelledby="short-answer">
+    <h2 id="short-answer">Vad betyder spreadsheet?</h2>
+    <p>En <strong>CSSBuy spreadsheet</strong> är en sammanställning av produktlänkar för att hitta och jämföra varor inför köp via CSSBuy. Använd den som ett urval, och kontrollera sedan originalannonsen, måtten och den valda varianten. Den här sidan är en svensk läsguide med kategorivägar till Cafans.</p>
+  </section>
+
+  <section class="section" aria-labelledby="topics-title">
+    <div class="section-top">
+      <h2 id="topics-title">Fyra saker att ha koll på.</h2>
+      <p>Från första fynd till en tydligare inköpsplan.</p>
+    </div>
+    <div class="topics">
+      <div class="topic">
+        <h3>CSSBuy fynd</h3>
+        <p>För dig som vill hitta produktlänkar till sneakers, jämföra vardagskläder och välja accessoarer efter användning.</p>
+      </div>
+      <div class="topic">
+        <h3>CSSBuy storleksguide</h3>
+        <p>Jämför skostorlek i centimeter, läs storlekstabeller för hoodies och kontrollera längden på en T-tröja.</p>
+      </div>
+      <div class="topic">
+        <h3>CSSBuy QC-bilder</h3>
+        <p>Skilj säljarbilder från lagerbilder och granska färg, märkning och synliga sömmar före nästa beslut.</p>
+      </div>
+      <div class="topic">
+        <h3>CSSBuy fraktplanering</h3>
+        <p>Tänk på paketets vikt och volym, jämför fraktalternativ och kontrollera hela kostnadsbilden.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="style-title">
+    <div class="section-top">
+      <h2 id="style-title">Två uttryck. Samma blick för detaljer.</h2>
+      <p>Välj en riktning för garderoben innan du jämför enskilda länkar.</p>
+    </div>
+    <div class="editorial">
+      <article>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&amp;fit=crop&amp;w=760&amp;q=75"
+            alt="Nike-sneakers i varma bruna och ljusa toner fotograferade på nära håll."
+            width="760"
+            height="570"
+            loading="lazy"
+            decoding="async">
+          <figcaption>Neutrala toner / Nike-inspiration. Ingen uppgift om sortiment eller äkthet.</figcaption>
+        </figure>
+        <h3>En lugn bas, tydliga proportioner</h3>
+        <p>För sneakers till vardags är bredd, hälgrepp och utrymme vid tårna viktigare än modellnamnet. Jämför skor för breda fötter med modellens egna mått; välj inte automatiskt en större storlek.</p>
+        <p>Vill du matcha sneakers med byxor? Kontrollera byxans innerbenslängd och benöppning. För shorts med ledig passform ger midjemått och lårvidd mer vägledning än en ensam storleksbokstav.</p>
+        <a href="https://www.cafans.com">Jämför basplagg på Cafans ↗</a>
+      </article>
+      <article>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=760&amp;h=570&amp;q=75"
+            alt="Röd Nike-sneaker i sidoprofil med tydlig ljus logotyp och kontrasterande sula."
+            width="760"
+            height="570"
+            loading="lazy"
+            decoding="async">
+          <figcaption>Färg som fokus / Nike-inspiration. Fotot är inte kontrollunderlag för en beställning.</figcaption>
+        </figure>
+        <h3>Låt en färg bära helheten</h3>
+        <p>En färgstark sko fungerar som utgångspunkt när du jämför enfärgade T-tröjor och hoodies med rymlig passform. Läs bröstvidd och plagglängd tillsammans så att överdelen får den proportion du vill ha.</p>
+        <p>För kepsar med justerbar passform behöver du kontrollera omkrets och spänne. Vid val av smycken för vardagsbruk: fråga efter material, mått och information om hudkontakt i stället för att dra slutsatser från glansen på ett foto.</p>
+        <a href="https://www.cafans.com">Utforska fler stilkombinationer ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section journal" aria-labelledby="journal-title">
+    <aside>
+      <p class="label">Temasidor i miniformat</p>
+      <h2 id="journal-title">Läs innan du väljer.</h2>
+      <p>Tre korta artiklar om passform, kontrollbilder och paketplanering. Råden hjälper dig att ställa bättre frågor om en produkt.</p>
+    </aside>
+    <div>
+      <article class="article">
+        <span class="number">ARTIKEL 01 / PASSFORM</span>
+        <h3>Storlek först: jämför plagget du redan gillar</h3>
+        <p>En CSSBuy storleksguide blir användbar först när du vet hur måtten är tagna. Lägg en tröja plant, utan att sträcka tyget, och jämför med säljarens metod. Bröstvidd mätt tvärs över plagget är inte samma sak som kroppens bröstomkrets.</p>
+        <div class="table-scroll">
+          <table>
+            <caption>Mått som hjälper dig att jämföra olika kategorier</caption>
+            <thead>
+              <tr>
+                <th scope="col">Kategori</th>
+                <th scope="col">Kontrollera</th>
+                <th scope="col">Fråga om</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Skor</td>
+                <td>Fotlängd, angivet skomått och bredd</td>
+                <td>Avser tabellen foten eller innersulan?</td>
+              </tr>
+              <tr>
+                <td>Hoodies &amp; stickat</td>
+                <td>Bröstvidd, längd och ärm</td>
+                <td>Är måtten tagna med plagget plant?</td>
+              </tr>
+              <tr>
+                <td>Jackor &amp; set</td>
+                <td>Axlar, rörelseutrymme och separata delmått</td>
+                <td>Finns plats för ett extra lager?</td>
+              </tr>
+              <tr>
+                <td>Byxor &amp; shorts</td>
+                <td>Midja, gren, innerben och benöppning</td>
+                <td>Är midjemåttet avslappnat eller utsträckt?</td>
+              </tr>
+              <tr>
+                <td>Huvudbonader &amp; accessoarer</td>
+                <td>Omkrets, längd och justering</td>
+                <td>Vilket måttintervall kan produkten anpassas till?</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Vid val av jacka för lager på lager, mät över den tröja du faktiskt tänker använda. För matchande set med olika delmått behöver överdel och underdel kontrolleras var för sig. Även storlek på underkläder och passform på matchtröjor måste bedömas utifrån den aktuella tabellen.</p>
+      </article>
+
+      <article class="article">
+        <span class="number">ARTIKEL 02 / BILDKONTROLL</span>
+        <h3>Läs QC som en kontrollista</h3>
+        <p>QC betyder kvalitetskontroll. En guide till CSSBuy QC-bilder bör börja med skillnaden mellan ett inspirationsfoto, säljarens produktbild och bilden av det mottagna exemplaret. Bara den sista kan hjälpa dig kontrollera just din leverans.</p>
+        <ul>
+          <li><strong>Rätt exemplar:</strong> jämför modell, färgvariant, antal och storleksmärkning med beställningen.</li>
+          <li><strong>Skornas detaljer:</strong> be vid behov om bilder av häl, tåparti och sula. Ett enda perspektiv räcker sällan för att bedöma formen.</li>
+          <li><strong>Plaggets utförande:</strong> kontrollera synliga sömmar, tryckets placering och eventuella fläckar. Kontroll av dragkedjor kräver mer än en stillbild.</li>
+          <li><strong>Accessoarernas funktion:</strong> granska spännen, lås och infästningar. Begär en närbild om viktiga delar inte syns.</li>
+        </ul>
+        <p>För att bedöma färgskillnader på produktbilder behövs jämförbart ljus. Om ett mått är avgörande, be om en tydlig bild med måttband och angivna mätpunkter. Bilder kan inte bevisa materialinnehåll, äkthet eller långsiktig hållbarhet.</p>
+      </article>
+
+      <article class="article">
+        <span class="number">ARTIKEL 03 / PAKET &amp; KOSTNAD</span>
+        <h3>Planera paketet innan du väljer frakt</h3>
+        <p>För CSSBuy frakt till Sverige är den aktuella offerten mer användbar än ett generellt exempel från en annan beställning. Jämför frakt efter paketets vikt och yttermått och läs den valda transporttjänstens villkor.</p>
+        <div class="budget"><strong>Budgetera hela köpet:</strong> produkt + eventuell inrikesfrakt + service- och betalningsavgifter + internationell frakt + eventuella importkostnader. Kontrollera vilka delar som redan ingår så att du inte räknar dem två gånger.</div>
+        <p style="margin-top:18px">Om du vill minska paketets volym genom att ta bort skokartongen, väg platsbesparingen mot skyddet för skorna. Samfrakt av kläder och skor behöver planeras utifrån innehåll, transportregler och emballage; ett större paket är inte automatiskt billigare.</p>
+        <p>Kontrollera villkor för retur före leverans och hantera oklarheter innan paketet skickas vidare. För leveranstid till Sverige, skilj säljarens hantering från lagerarbete, internationell transport och den sista leveranssträckan. Någon fast leveranstid utlovas inte här.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section faq" aria-labelledby="faq-title">
+    <div class="faq-intro">
+      <p class="label">Frågor &amp; raka svar</p>
+      <h2 id="faq-title">Det här undrar många.</h2>
+      <p>En kort FAQ för dig som vill använda en produktlista som beslutsunderlag.</p>
+    </div>
+    <div>
+      <details open>
+        <summary>Vad är en CSSBuy spreadsheet?</summary>
+        <p>Det är en sammanställning av produktlänkar som används för att hitta och jämföra varor inför ett köp via CSSBuy. En länklista är inte ett intyg om kvalitet, lagerstatus eller äkthet.</p>
+      </details>
+      <details>
+        <summary>Är den här sidan officiellt kopplad till CSSBuy?</summary>
+        <p>Nej. Fyndjournalen är en oberoende guide. Kategorilänkarna öppnar Cafans och övriga länkar går till Cafans startsida. Här hanteras inga konton, betalningar eller beställningar.</p>
+      </details>
+      <details>
+        <summary>Hur väljer jag storlek på skor och hoodies?</summary>
+        <p>Utgå från den aktuella produktens storlekstabell och mätmetod. Jämför fotlängd eller angivet skomått för skor och bröstvidd, längd och ärm för hoodies. Fotlängd och innersulelängd är olika mått.</p>
+      </details>
+      <details>
+        <summary>Bevisar QC-bilder att en vara är äkta?</summary>
+        <p>Nej. QC-bilder hjälper dig att bedöma synliga detaljer och om rätt variant har kommit fram. De bevisar inte äkthet, materialinnehåll eller hur länge varan håller.</p>
+      </details>
+      <details>
+        <summary>Ingår frakten i priset från en produktlista?</summary>
+        <p>Räkna inte med det. Kontrollera vad produktpriset omfattar och vilka frakt-, betalnings- och serviceavgifter som tillkommer. Slutkostnaden behöver bedömas utifrån det aktuella köpet och paketet.</p>
+      </details>
+      <details>
+        <summary>Visar inspirationsbilderna produkter som finns i lager?</summary>
+        <p>Nej. Bilderna är stilillustrationer och är inte lagerbesked, produktannonser eller QC-underlag. Kontrollera produktens egna bilder, variant och tillgänglighet efter att du öppnat katalogen.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="next-title">
+    <div>
+      <h2 id="next-title">Ett bättre urval börjar med en fråga.</h2>
+      <p>Vilket mått eller vilken detalj behöver du veta innan du väljer?</p>
+    </div>
+    <a class="button" href="https://www.cafans.com">Gå vidare till Cafans ↗</a>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p><strong>Fyndjournalen — en oberoende svensk läsguide.</strong> CSSBuy och Nike nämns för att beskriva ämne och bildmotiv. Ingen officiell anknytning eller något samarbete med varumärkena påstås. Bilder via Unsplash används som inspiration.</p>
+  <p>Den här sidan säljer inga varor. Aktuella produktuppgifter och köpbeslut behöver kontrolleras hos berörd säljare eller tjänst. <a href="https://www.cafans.com">Besök Cafans ↗</a></p>
+</footer>
+</body>
+</html>
